@@ -1,0 +1,47 @@
+#include <stdio.h>
+void printnum()
+{
+  int num;
+  scanf(" %d",&num);
+  int i=0;
+  while(i<=num){
+      printf(" %d \n",i);
+      i++;
+  }  
+}
+void factorial()
+{
+  //factorial
+  int fact;
+  printf("enter the number for factorial:");
+  scanf(" %d",&fact);
+  int ans=1;
+  while(fact>=1)
+      {
+      ans=ans*fact;
+      fact--;
+      }
+      printf(" the factorial of is %d \n",ans);
+}
+void reverse()
+{
+  //reverse a number
+  int num;
+  printf("enter the number to reverse:");
+  int rem,rev=0;
+  scanf(" %d",&num);
+  while(num!=0)
+  {
+      rem=num%10;
+      rev= rev*10+rem;
+      num /= 10;
+  }
+  printf("the reversed number is %d",rev);
+}
+int main() 
+{
+    printnum();
+    factorial();
+    reverse();
+    return 0;
+}

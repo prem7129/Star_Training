@@ -1,0 +1,57 @@
+We began with the basics of semiconductors, where I learned about N-type and P-type materials. N-type semiconductors have extra electrons, while P-type have holes. These are the foundation of most electronic devices.
+
+Then we moved on to semiconductor devices. I understood how a diode allows current to flow in only one direction, and how a Zener diode is used for voltage regulation by allowing reverse current at a specific voltage. I also learned about LEDs, which emit light when current flows through them.
+
+We explored their applications, like half-wave and full-wave rectifiers. A half-wave rectifier uses one diode to convert AC to DC, while a full-wave rectifier uses multiple diodes to make the conversion more efficient.
+
+Next, we studied BJTs – Bipolar Junction Transistors. I learned about NPN and PNP types, and how they operate in different regions: active, cut-off, and saturation. BJTs are widely used in amplification and switching.
+
+We also covered FETs – Field Effect Transistors, including N-channel and P-channel types. I understood the difference between depletion mode (normally on) and enhancement mode (normally off). FETs are known for their high input impedance and are used in many analog applications.
+
+Then we discussed amplifiers, especially the operational amplifier or op-amp. It’s a high-gain voltage amplifier with differential inputs, used in signal processing, filtering, and more.
+
+We also looked at power amplifiers, which are designed to drive large loads like speakers. I learned about different classes like A, B, AB, and C, each with its own balance of efficiency and linearity.
+
+Finally, we studied oscillators, which generate continuous waveforms without any input signal. I understood the Barkhausen criterion, which is the condition for sustained oscillations, and the different types like RC, LC, and crystal oscillators.
+
+
+We began with an introduction to digital circuits, where I understood that digital systems operate using discrete binary values—0s and 1s—unlike analog systems that deal with continuous signals. This binary nature makes digital systems more reliable, easier to design, and less sensitive to noise.
+
+We compared analog and digital systems, and I learned that while analog is better for real-world signals like sound and temperature, digital systems are preferred for computation, storage, and communication due to their precision and scalability.
+
+Then we studied sampling and quantization, which are essential in converting analog signals to digital. Sampling involves measuring the signal at regular intervals, and quantization maps these samples to the nearest digital value. This process is the foundation of digital signal processing.
+
+Next, we explored number systems:
+
+Binary (base-2), used in all digital electronics.
+Octal (base-8) and Hexadecimal (base-16), which simplify binary representation.
+Decimal (base-10), our everyday number system.
+BCD (Binary-Coded Decimal), where each decimal digit is represented by its binary equivalent.
+I also learned about 1’s and 2’s complement, which are methods for representing negative numbers in binary. These are crucial for performing binary arithmetic in digital systems.
+
+We then moved into logic gates, the fundamental building blocks of digital circuits. I studied:
+
+Basic gates: AND, OR, NOT.
+Universal gates: NAND and NOR, which can be used to build any logic function.
+Exclusive gates: XOR and XNOR, used in parity checking and arithmetic circuits.
+In combinational circuits, I explored:
+
+Adders: Half and full adders for binary addition.
+Subtractors: For binary subtraction.
+Multiplexers (MUX): Select one input from many.
+Demultiplexers (DEMUX): Route one input to multiple outputs.
+Comparators: Compare binary numbers and output equality or inequality.
+Encoders and Decoders: Convert data from one format to another, essential in communication systems.
+Then we studied latches and flip-flops, which are used for memory and synchronization:
+
+SR Latch: Basic memory element with Set and Reset inputs.
+JK Flip-Flop: Solves the invalid state issue of SR and can toggle.
+D Flip-Flop: Stores the value of the data input on a clock edge.
+T Flip-Flop: Toggles its state with each clock pulse.
+I learned to analyze their truth tables, characteristic equations, and timing diagrams. I also understood the race-around condition in JK flip-flops and how the master-slave configuration helps eliminate it by using two stages controlled by opposite clock phases.
+
+In sequential circuits, I explored:
+
+Shift Registers: Used to store and shift data serially or in parallel.
+Counters: Built using flip-flops to count pulses.
+PLA (Programmable Logic Array) and PAL (Programmable Array Logic): These are programmable devices used to implement custom logic functions efficiently.

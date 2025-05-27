@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main() {
+//if statement
+/*int num;
+scanf(" %d",&num);
+if(num==0){
+    printf("the number is zero");
+}
+if(num>0){
+    printf("the number is positive\n");
+}
+if(num<0){
+    printf("the numberis negative");
+}
+int a,b,c;
+scanf(" %d %d %d",&a,&b,&c);
+int largest=1;
+if(b>largest){
+    largest =b;
+}
+if(c>largest){
+    largest =c;
+}
+    printf("largest is %d",largest);
+    return 0;
+//leap year
+
+*/
+int year;
+scanf(" %d",&year);
+if(year%4==0){
+    if(year%100==0){
+        if(year%400==0){
+            printf("the year is leap year");
+        }
+        if(year%400!=0){
+            printf("not a leap year");
+        }
+    }
+    if(year%100!=0){
+        printf("not a leap");
+    }
+}
+if(year%4!=0){
+    printf("not a leap");
+}
+
+    return 0;
+    
+}

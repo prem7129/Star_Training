@@ -1,0 +1,88 @@
+
+/// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdlib.h>
+#include<math.h>
+void program1(int *arr,int size){
+    int sum=0;
+    for(int i=0;i<size;i++){
+        sum+=arr[i];
+    }
+    printf("the sum is %d\n",sum);
+    
+}
+void program2(int *arr, int size){
+    int start=0, end=size-1;
+    int temp=0;
+    while(start<end){
+        temp=arr[start];
+        arr[start]=arr[end];
+        arr[end]=temp;
+        start++;
+        end--;
+    }
+    for(int i=0;i<size;i++){
+        printf(" %d\n",arr[i]);
+    }
+}
+void program3(int *arr, int size){
+    int max1=0;
+    int max2=0;
+    for(int i=0;i<size;i++){
+        if(arr[i]>max1){
+            max2=max1;
+            max1=arr[i];
+            
+        }
+        
+    }
+
+    printf(" %d\n",max2);
+}
+void program4(int num){
+    if(num==2){
+        printf(" Yes");
+    }
+    else if(num==0){
+        printf("NO");
+    }
+    else if(num>2){
+        for(int i=3;i<sqrt(num);i++){
+            if(num%i==0){
+                printf("no\n");
+                break;
+            }
+            else{
+                printf("YES");
+                break;
+            }
+        }
+    }
+}
+void program5(int a,int b){
+    int temp;
+    while(b!=0){
+        temp=b;
+        b=a%b;
+        a=temp;
+    }
+    printf("the GCD is :%d",a);
+}
+int main(int argc, char*argv[]) {
+   int arr[5]={7,1,2,3,5};
+   int size=5;
+   int sum=0;
+   //count command line arguments
+   for(int i=0;i<argc;i++){
+       sum+=atoi(argv[i]);
+   }
+   printf(" %d\n",sum);
+   printf(" count %d\n",argc);
+   //prime number variable
+   int num=103;
+  //gcd of two numbers variable
+  int a=24,b=16;
+
+  
+    return 0;
+}

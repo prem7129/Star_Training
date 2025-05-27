@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+void printnum()
+{ 
+    //printing num
+    int num;
+    printf("enter the number to print");
+    scanf(" %d",&num);
+    int i=0;
+    do{
+        printf(" %d\n",i);
+        i++;
+    }while(i<=num);
+    
+}
+void reverse()
+{
+    // reverse a number
+    
+    int number;
+    printf("enter the number  to reverse");
+    scanf(" %d",&number);
+    int rev=0, rem;
+    do{
+        rem=number%10;
+        rev=rev*10+rem;
+        number /= 10;
+    }while(number!=0);
+    printf("the reversed number is %d \n",rev);
+}
+void fibonacci()
+{
+    // fibonacci series
+    int count=0,num;
+    printf("enter the num upto print fibonacci:");
+    scanf(" %d",&num);
+    int first=0;
+    int second=1;
+    int next;
+    printf("\nthe series is ");
+    do{
+        printf(" %d",first);
+        next = first+second;
+        first = second;
+        second = next;
+        count++;
+    }while(count<num);   
+}
+int main()
+{
+    printnum();
+    reverse();
+    fibonacci();
+    return 0;
+}

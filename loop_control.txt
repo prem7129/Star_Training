@@ -1,0 +1,38 @@
+#include <stdio.h>
+
+int main() {
+ // loop control statements
+ //break
+ /*int num;
+ scanf(" %d",&num);
+ for(int i=0;i<num;i++){
+     if(i == 7){
+         printf("the loop breaks at 7");
+         break;
+     }
+     printf(" %d",i);
+ }*/
+ // continue
+ 
+ /*for(int i=1;i<=20;i++){
+     if(i%5==0){
+        printf("loop skips at multiples of 5\n"); 
+        continue;
+     }
+     printf(" %d \n",i);
+ }*/
+ //goto statemet
+/* for(int i=1;i<=20;i++){
+     if(i%5==0){
+         goto skip;
+     }
+     printf(" %d \n",i);
+     
+ }
+ skip:
+         printf("the multiples of 5 \n");
+         
+ */
+ 
+    return 0;
+}

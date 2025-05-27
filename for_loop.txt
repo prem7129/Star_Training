@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+void printingnum(int num)
+{
+  //printing numbers
+
+  int sum=0;
+  for(int i=1;i<=num;i++)
+  {
+      printf("%d \n",i);
+      sum+=i;
+  }
+
+  //sum of numbers
+  printf("the sum of numbers is : %d\n",sum);
+  
+}
+void table(int upto, int num)
+{
+  //multiplication table
+  for(int i=1;i<=upto;i++)
+  {
+      int mul=0;
+      mul=num*i;
+      printf(" %d x %d = %d \n",i,num,mul); 
+  }   
+  
+}
+int main() 
+{
+   
+    int num;
+    printf(" enter the num to print");
+    scanf(" %d",&num);
+    int upto;
+    printf("enter the num upto print the table");
+    scanf(" %d",&upto);
+    printingnum(num);
+    table(upto,num);
+    return 0;
+}
